@@ -1,0 +1,24 @@
+﻿@model  ICollection<WebApplication.Models.MathExpression>
+@{
+   // Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <h1>@ViewBag.Message</h1>
+    @foreach (var item in Model)
+    {
+        <span>@item.Expression</span> <br />
+    }
+    <title></title>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
+
+

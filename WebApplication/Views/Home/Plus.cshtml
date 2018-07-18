@@ -1,0 +1,23 @@
+﻿@model Tuple<string, double, ICollection<WebApplication.Models.MathExpression>>
+    @{
+        ViewBag.Title = "Plus";
+    }
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <h2>Plus</h2>
+        @foreach(var item in  Model.Item3)
+        {
+            <span>@item.Expression</span> <br/>
+        }
+            
+        <h3>@Model.Item1 = @Model.Item2</h3>
+    </head>
+    <body>
+        <div>
+
+        </div>
+    </body>
+</html>
